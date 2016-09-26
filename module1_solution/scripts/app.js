@@ -1,5 +1,7 @@
 (function () {
+
 'use strict';
+
 angular.module('LunchCheck', [])
 .controller('LunchCheckController', LunchCheckController);
 
@@ -24,16 +26,13 @@ function LunchCheckController($scope) {
   };
 
   function countMenuItems() {
-    //return $scope.lunchMenuList.trim().split(",").length;
     var items = $scope.lunchMenuList.trim().split(",");
     var itemsFiltered = [];
     for(var item in items) {
-      console.log(items[item]);
       if(items[item] != "") {
         itemsFiltered.push(items[item]);
       }
-    }
-    console.log(itemsFiltered.length);
+    };
     return itemsFiltered.length;
   }
 }
