@@ -53,3 +53,9 @@ input[type="text"] {
 ol {
   float: left;
 }
+ul {
+  padding: 5px 20px;
+}
+.message {
+  float: left;
+}

@@ -42,7 +42,6 @@
         if(narrow.searchTerm === "" || narrow.found.length === 0){
           narrow.message = "Nothing found";
         }
-        console.log(response);
       })
       .catch(function (error) {
         console.log("Something wrong!");
@@ -50,7 +49,6 @@
     };
 
     narrow.removeItem = function (itemIndex) {
-      console.log('test');
       narrow.found.splice(itemIndex, 1);
     }
   }
@@ -64,6 +62,7 @@
         method: "GET",
         url: (ApiBasePath + "menu_items.json")
       }).then(function success(response) {
+        searchTerm = searchTerm.toLowerCase();
         var foundItems = [];
         var menu_items = response.data.menu_items;
         for(var item in menu_items) {
