@@ -9,7 +9,6 @@ function MenuDataServiceController($http) {
 	var service = this;
 
     service.getAllCategories = function () {
-        console.log("Hey1");
         var promise = $http({
             method: "GET",
             url: ("https://davids-restaurant.herokuapp.com/categories.json")
