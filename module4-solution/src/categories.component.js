@@ -3,7 +3,7 @@
 
 angular.module('Data')
 .component('catList', {
-  templateUrl: 'src/catList.template.html',
+  templateUrl: 'src/templates/catList.template.html',
   controller: CategoriesComponentController,
   bindings: {
     items: '<'

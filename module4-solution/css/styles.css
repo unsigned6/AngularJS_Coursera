@@ -1,5 +1,8 @@
 body {
   font-size: 1.2em;
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  background-color: black;
 }
 
 div.tabs > a, div.tabs > button {
@@ -16,9 +19,9 @@ div.tabs {
 }
 
 span[ui-sref]:hover {
-  /*display: inline-block;*/
   cursor: pointer;
-  border: solid black 1px;
+  border: solid yellow 1px;
+  color: yellow;
   padding-left: 5px;
   padding-right: 5px;
 }
